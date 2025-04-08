@@ -1,68 +1,82 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: white;
-  }
-  .hero {
-    position: relative;
-    padding: 5rem 1rem;
-    background-color: #0f172a;
-    text-align: center;
-    overflow: hidden;
-  }
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/placeholder.svg?height=800&width=1600');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: 0;
-  }
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  .highlight {
-    color: #34d399;
-  }
-  p {
-    font-size: 1.25rem;
-    margin: 1rem 0 2rem;
-  }
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn {
-    background-color: #34d399;
-    color: black;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  .btn:hover {
-    background-color: #059669;
-  }
-  .btn.secondary {
-    background-color: white;
-    color: #0f172a;
-  }
-  .btn.secondary:hover {
-    background-color: #d1d5db;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('../images/image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+
+.hero {
+  position: relative;
+  padding: 5rem 1rem;
+  background-color: #000000;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/placeholder.svg?height=800&width=1600');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #1e93d5; /* bright blue */
+}
+
+p {
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #1e93d5; /* blue */
+  color: black;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6b21a8; /* deep purple */
+  color: white;
+}
+
+.btn.secondary {
+  background-color: #6b21a8; /* deep purple */
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: #1e93d5; /* blue */
+  color: black;
+}
