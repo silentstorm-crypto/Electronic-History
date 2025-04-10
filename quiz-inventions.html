@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Key Inventions Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Key Inventions Quiz</h1>
+    <p>Test your knowledge about key inventions in electronics.</p>
+
+    <div id="quiz-area">
+      <h2>Question 1</h2>
+      <p>Who invented the first practical telephone?</p>
+      <button onclick="checkAnswer('Alexander Graham Bell')">Alexander Graham Bell</button>
+      <button onclick="checkAnswer('Thomas Edison')">Thomas Edison</button>
+      <button onclick="checkAnswer('Nikola Tesla')">Nikola Tesla</button>
+      <button onclick="checkAnswer('Guglielmo Marconi')">Guglielmo Marconi</button>
+    </div>
+
+    <button id="next-button" class="btn" onclick="nextQuestion()">Next Question</button>
+    <div id="quiz-result" class="hidden">
+      <p>Your score: <span id="score"></span></p>
+      <a href="quiz-results.html?score=" id="result-link">View Results</a>
+    </div>
+  </div>
+
+  <script src="js/quiz-inventions.js"></script>
+</body>
+</html>

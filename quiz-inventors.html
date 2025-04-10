@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Famous Inventors Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Famous Inventors Quiz</h1>
+    <p>Test your knowledge about the inventors of key electronic innovations.</p>
+
+    <div id="quiz-area">
+      <h2>Question 1</h2>
+      <p>Nikola Tesla is best known for what?</p>
+      <button onclick="checkAnswer('AC Electricity')">AC Electricity</button>
+      <button onclick="checkAnswer('DC Motor')">DC Motor</button>
+      <button onclick="checkAnswer('Battery')">Battery</button>
+      <button onclick="checkAnswer('Microchip')">Microchip</button>
+    </div>
+
+    <button id="next-button" class="btn" onclick="nextQuestion()">Next Question</button>
+    <div id="quiz-result" class="hidden">
+      <p>Your score: <span id="score"></span></p>
+      <a href="quiz-results.html?score=" id="result-link">View Results</a>
+    </div>
+  </div>
+
+  <script src="js/quiz-inventors.js"></script>
+</body>
+</html>
